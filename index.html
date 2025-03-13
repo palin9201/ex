@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工智慧應用於心律不整螺旋波相位奇異點之偵測</title>
+    <style>
+        #container { margin: 0 auto; width: 1024px; }
+        td { text-align: center; }
+        .r_img { border-radius: 50%; width: 300px; height: 300px; }
+        .r_img1 { border-radius: 20px; }
+        .large_font { font-size: 85px; }
+        .large_font1 { font-size: 42px; }
+        .large_font2 { font-size: 40px; } /* 修正錯誤: 40spx -> 40px */
+        .large_font3 { font-size: 25px; }
+        
+        body { margin: 0; font-family: Arial, sans-serif; }
+        
+        .navbar {
+            position: fixed; /* 讓導航欄固定在上方 */
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            z-index: 1000; /* 確保在最上層 */
+        }
+
+        .logo { font-size: 20px; font-weight: bold; }
+
+        .nav-links { display: flex; }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-color: #000;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-top: 60px; /* 確保內容不被固定導航欄遮擋 */
+        }
+
+        .text {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .section1 { background-image: url('05.jpg'); }
+
+        /* ✅ 手機適配 */
+        @media screen and (max-width: 768px) {
+            .navbar { flex-direction: column; text-align: center; padding: 10px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+            .nav-links a { padding: 8px; font-size: 14px; }
+            .logo { font-size: 16px; }
+            .large_font { font-size: 8vw; }
+            .large_font1 { font-size: 5vw; }
+            .large_font2 { font-size: 4.5vw; }
+            .large_font3 { font-size: 4vw; }
+            .r_img { width: 80%; height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ✅ 把導航欄放到 <body> 內 -->
+    <div class="navbar">
+        <div class="logo">人工智慧應用於心律不整螺旋波相位奇異點之偵測</div>
+        <div class="nav-links">
+            <a href="index.html">首頁</a>
+            <a href="main1.html">研究目的</a>
+            <a href="main2.html">研究方法/收集資料</a>
+        </div>
+    </div>
+
+    <div class="section section1">
+        <div class="text">
+            <p class="large_font">人工智慧應用於心律不整</p>
+            <p class="large_font">螺旋波相位奇異點之偵測</p>
+        </div>
+    </div>
+
+    <div class="section section2"> 
+        <table style="width: 100%; text-align: center;">
+            <tr>
+                <td colspan="2">
+                    <img src="06.jpg" class="r_img" alt="圖片">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="large_font3">指導老師: 羅主斌、張漢呈</p>
+                    <p class="large_font3">專題組員: 鄭凱心、鍾明昉、林亮辰、蔡旻蕙、陳穎絨、李秈芝、許吉妙</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section section3">
+        <div class="text">
+            <img src="07.jpg" class="r_img" alt="圖片">
+            <p class="large_font2">摘要</p>
+            <hr style="border: 1px solid white; width: 80%; margin: 20px auto;">
+            <p class="large_font3">根據世界衛生組織(WHO)，心血管疾病是全球第一大死因，常見的心血管疾病中就包括</p>
+            <p class="large_font3">心律不整等心臟疾病，同時人工智慧在醫療領域的應用也越來越廣泛，不僅能快速處理</p>
+            <p class="large_font3">大量的醫療數據，還能從中挖掘出關鍵的病理特徵，減少人工標註的不確定性，提升診</p>
+            <p class="large_font3">斷效率與準確性，因此我們選擇這個題目作為此研究的出發點。</p>
+        </div>
+    </div>
+
+</body>
+</html>
